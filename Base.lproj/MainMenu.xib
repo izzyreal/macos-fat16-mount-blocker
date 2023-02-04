@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,10 +15,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
-                <menuItem title="Disk Arbitrator" id="56">
-                    <menu key="submenu" title="Disk Arbitrator" systemMenu="apple" id="57">
+                <menuItem title="FAT16 Mount Blocker" id="56">
+                    <menu key="submenu" title="FAT16 Mount Blocker" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About Disk Arbitrator" id="58">
+                            <menuItem title="About FAT16 Mount Blocker" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
@@ -37,7 +37,7 @@
                             <menuItem isSeparatorItem="YES" id="144">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Hide Disk Arbitrator" keyEquivalent="h" id="134">
+                            <menuItem title="Hide FAT16 Mount Blocker" keyEquivalent="h" id="134">
                                 <connections>
                                     <action selector="hide:" target="-1" id="367"/>
                                 </connections>
@@ -56,7 +56,7 @@
                             <menuItem isSeparatorItem="YES" id="149">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Quit Disk Arbitrator" keyEquivalent="q" id="136">
+                            <menuItem title="Quit FAT16 Mount Blocker" keyEquivalent="q" id="136">
                                 <connections>
                                     <action selector="terminate:" target="-3" id="449"/>
                                 </connections>
@@ -638,7 +638,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="491">
                         <items>
-                            <menuItem title="DiskArbitrator Help" keyEquivalent="?" id="492">
+                            <menuItem title="FAT16MountBlocker Help" keyEquivalent="?" id="492">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="493"/>
                                 </connections>
@@ -647,33 +647,33 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="-132" y="9"/>
         </menu>
-        <window title="Disk Arbitrator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="DiskArbitratorPanel" animationBehavior="default" id="371" customClass="NSPanel">
+        <window title="FAT16 Mount Blocker" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="FAT16MountBlockerPanel" animationBehavior="default" id="371" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="176" y="178" width="466" height="575"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="466" height="575"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="563">
+                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="563">
                         <rect key="frame" x="-1" y="51" width="468" height="525"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="rpx-bG-2Rx">
-                            <rect key="frame" x="1" y="0.0" width="466" height="524"/>
+                            <rect key="frame" x="1" y="1" width="466" height="523"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="18" headerView="582" id="566">
-                                    <rect key="frame" x="0.0" y="0.0" width="466" height="507"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="466" height="506"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn editable="NO" width="372" minWidth="40" maxWidth="1000" id="568">
+                                        <tableColumn editable="NO" width="334" minWidth="40" maxWidth="1000" id="568">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Media Description">
-                                                <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
@@ -684,7 +684,6 @@
                                         </tableColumn>
                                         <tableColumn identifier="BSDName" editable="NO" width="88" minWidth="10" maxWidth="3.4028234663852886e+38" id="590">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Device">
-                                                <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
@@ -707,11 +706,11 @@
                                 </tableView>
                             </subviews>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="0.22985666855615844" horizontal="YES" id="565">
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.22985666855615844" horizontal="YES" id="565">
                             <rect key="frame" x="-100" y="-100" width="223" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="564">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="564">
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -720,7 +719,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
-                    <popUpButton verticalHuggingPriority="750" id="627">
+                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="627">
                         <rect key="frame" x="319" y="14" width="130" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <popUpButtonCell key="cell" type="push" title="Block mounts" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="630" id="628">
@@ -738,7 +737,7 @@
                             <binding destination="549" name="selectedIndex" keyPath="selection.mountMode" id="637"/>
                         </connections>
                     </popUpButton>
-                    <button id="654">
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="654">
                         <rect key="frame" x="18" y="20" width="92" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="check" title="Activated" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="655">
@@ -749,7 +748,7 @@
                             <binding destination="549" name="value" keyPath="selection.isActivated" id="657"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="633">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="633">
                         <rect key="frame" x="257" y="20" width="58" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Mode:" id="634">
@@ -776,16 +775,10 @@
         <customObject id="420" customClass="NSFontManager"/>
         <menu id="533" userLabel="Status Menu">
             <items>
-                <menuItem title="About Disk Arbitrator" id="534">
+                <menuItem title="About FAT16 Mount Blocker" id="534" userLabel="About FAT16 Mount Blocker">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="showAboutPanel:" target="494" id="686"/>
-                    </connections>
-                </menuItem>
-                <menuItem title="Show Disks Window" id="661">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="showMainWindow:" target="494" id="662"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Preferences..." id="683">
@@ -794,83 +787,8 @@
                         <action selector="showPreferences:" target="494" id="684"/>
                     </connections>
                 </menuItem>
-                <menuItem isSeparatorItem="YES" id="664"/>
-                <menuItem title="Activate" id="535">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="performActivation:" target="494" id="617"/>
-                        <binding destination="549" name="enabled" keyPath="selection.isActivated" id="621">
-                            <dictionary key="options">
-                                <string key="NSValueTransformerName">NSNegateBoolean</string>
-                            </dictionary>
-                        </binding>
-                    </connections>
-                </menuItem>
-                <menuItem title="Deactivate" id="612">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="performDeactivation:" target="494" id="618"/>
-                        <binding destination="549" name="enabled" keyPath="selection.isActivated" id="619"/>
-                    </connections>
-                </menuItem>
-                <menuItem title="Set Mode" id="603">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Set Mode" id="604">
-                        <items>
-                            <menuItem title="Block Mounts" id="605">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="performSetMountBlockMode:" target="494" id="622"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Mount read-only" id="606">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="performSetMountReadOnlyMode:" target="494" id="623"/>
-                                </connections>
-                            </menuItem>
-                        </items>
-                    </menu>
-                    <connections>
-                        <binding destination="549" name="enabled" keyPath="selection.isActivated" id="659"/>
-                    </connections>
-                </menuItem>
-                <menuItem title="Disk" id="665">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Disk" id="666">
-                        <items>
-                            <menuItem title="Eject" id="667">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="performEject:" target="494" id="670"/>
-                                    <binding destination="494" name="enabled" keyPath="canEjectSelectedDisk" id="680"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Mount..." id="668">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="performMount:" target="494" id="671"/>
-                                    <binding destination="494" name="enabled" keyPath="canMountSelectedDisk" id="679"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Unmount" id="669">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="performUnmount:" target="494" id="672"/>
-                                    <binding destination="494" name="enabled" keyPath="canUnmountSelectedDisk" id="678"/>
-                                </connections>
-                            </menuItem>
-                        </items>
-                    </menu>
-                </menuItem>
-                <menuItem title="Attach Disk Image..." id="681">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="performAttachDiskImage:" target="494" id="682"/>
-                    </connections>
-                </menuItem>
                 <menuItem isSeparatorItem="YES" id="600"/>
-                <menuItem title="Install User Launch Agent..." id="690">
+                <menuItem title="Enable auto-start" id="690" userLabel="Enable auto-start">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="installUserLaunchAgent:" target="494" id="696"/>
@@ -878,13 +796,14 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="689"/>
-                <menuItem title="Quit Disk Arbitrator" id="536">
+                <menuItem title="Quit FAT16 Mount Blocker" id="536">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="terminate:" target="-3" id="538"/>
                     </connections>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="4" y="147"/>
         </menu>
         <objectController editable="NO" id="549" userLabel="Arbitrator">
             <declaredKeys>

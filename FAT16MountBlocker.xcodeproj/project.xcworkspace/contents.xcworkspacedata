@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DiskArbitrator.xcodeproj">
+      location = "self:FAT16MountBlocker.xcodeproj">
    </FileRef>
 </Workspace>

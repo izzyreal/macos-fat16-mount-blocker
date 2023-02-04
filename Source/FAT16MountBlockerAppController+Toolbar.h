@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "DiskArbitratorAppController.h"
+#import "FAT16MountBlockerAppController.h"
 
 @interface AppController (AppControllerToolbar)
 

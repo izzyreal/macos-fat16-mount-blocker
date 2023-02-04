@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		9654B7A3111E46D600E9B0C4 /* Build Disk Arbitrator DMG */ = {
+		9654B7A3111E46D600E9B0C4 /* Build FAT16 Mount Blocker DMG */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9654B7A6111E46F600E9B0C4 /* Build configuration list for PBXAggregateTarget "Build Disk Arbitrator DMG" */;
+			buildConfigurationList = 9654B7A6111E46F600E9B0C4 /* Build configuration list for PBXAggregateTarget "Build FAT16 Mount Blocker DMG" */;
 			buildPhases = (
 				9654B7A2111E46D600E9B0C4 /* ShellScript */,
 			);
 			dependencies = (
 				9654B7A8111E470600E9B0C4 /* PBXTargetDependency */,
 			);
-			name = "Build Disk Arbitrator DMG";
+			name = "Build FAT16 Mount Blocker DMG";
 			productName = "Build DMG";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		256AC3DA0F4B6AC300CF3369 /* DiskArbitratorAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* DiskArbitratorAppController.m */; };
+		256AC3DA0F4B6AC300CF3369 /* FAT16MountBlockerAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* FAT16MountBlockerAppController.m */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		96033DD51210E1DB006F4F11 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96033DD31210E1DB006F4F11 /* Preferences.xib */; };
-		9626D293111F476000B803AB /* DiskArbitratorAppController+Toolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626D292111F476000B803AB /* DiskArbitratorAppController+Toolbar.m */; };
+		9626D293111F476000B803AB /* FAT16MountBlockerAppController+Toolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626D292111F476000B803AB /* FAT16MountBlockerAppController+Toolbar.m */; };
 		9626D296111F536500B803AB /* ToolbarItem Eject.png in Resources */ = {isa = PBXBuildFile; fileRef = 9626D294111F536500B803AB /* ToolbarItem Eject.png */; };
 		9626D297111F536500B803AB /* ToolbarItem Mount.png in Resources */ = {isa = PBXBuildFile; fileRef = 9626D295111F536500B803AB /* ToolbarItem Mount.png */; };
 		9626D2F41120FB7000B803AB /* ToolbarItem Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 9626D2F31120FB7000B803AB /* ToolbarItem Info.png */; };
@@ -79,20 +79,20 @@
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D1107260486CEB800E47090;
-			remoteInfo = DiskArbitrator;
+			remoteInfo = FAT16MountBlocker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		256AC3D80F4B6AC300CF3369 /* DiskArbitratorAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskArbitratorAppController.h; sourceTree = "<group>"; };
-		256AC3D90F4B6AC300CF3369 /* DiskArbitratorAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskArbitratorAppController.m; sourceTree = "<group>"; };
-		256AC3F00F4B6AF500CF3369 /* DiskArbitrator_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskArbitrator_Prefix.pch; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* FAT16MountBlockerAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAT16MountBlockerAppController.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* FAT16MountBlockerAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAT16MountBlockerAppController.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* FAT16MountBlocker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAT16MountBlocker_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* DiskArbitrator-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "DiskArbitrator-Info.plist"; path = "Resources/DiskArbitrator-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Disk Arbitrator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Disk Arbitrator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9626D291111F476000B803AB /* DiskArbitratorAppController+Toolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiskArbitratorAppController+Toolbar.h"; sourceTree = "<group>"; };
-		9626D292111F476000B803AB /* DiskArbitratorAppController+Toolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiskArbitratorAppController+Toolbar.m"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* FAT16MountBlocker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FAT16MountBlocker-Info.plist"; path = "Resources/FAT16MountBlocker-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* FAT16 Mount Blocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FAT16 Mount Blocker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9626D291111F476000B803AB /* FAT16MountBlockerAppController+Toolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FAT16MountBlockerAppController+Toolbar.h"; sourceTree = "<group>"; };
+		9626D292111F476000B803AB /* FAT16MountBlockerAppController+Toolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FAT16MountBlockerAppController+Toolbar.m"; sourceTree = "<group>"; };
 		9626D294111F536500B803AB /* ToolbarItem Eject.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ToolbarItem Eject.png"; path = "Resources/ToolbarItem Eject.png"; sourceTree = "<group>"; };
 		9626D295111F536500B803AB /* ToolbarItem Mount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ToolbarItem Mount.png"; path = "Resources/ToolbarItem Mount.png"; sourceTree = "<group>"; };
 		9626D2F31120FB7000B803AB /* ToolbarItem Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ToolbarItem Info.png"; path = "Resources/ToolbarItem Info.png"; sourceTree = "<group>"; };
@@ -153,10 +153,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				256AC3D80F4B6AC300CF3369 /* DiskArbitratorAppController.h */,
-				256AC3D90F4B6AC300CF3369 /* DiskArbitratorAppController.m */,
-				9626D291111F476000B803AB /* DiskArbitratorAppController+Toolbar.h */,
-				9626D292111F476000B803AB /* DiskArbitratorAppController+Toolbar.m */,
+				256AC3D80F4B6AC300CF3369 /* FAT16MountBlockerAppController.h */,
+				256AC3D90F4B6AC300CF3369 /* FAT16MountBlockerAppController.m */,
+				9626D291111F476000B803AB /* FAT16MountBlockerAppController+Toolbar.h */,
+				9626D292111F476000B803AB /* FAT16MountBlockerAppController+Toolbar.m */,
 				964E4DC910F9E874007B3112 /* Arbitrator.h */,
 				964E4DCA10F9E874007B3112 /* Arbitrator.m */,
 				964E4DEC10F9F4BD007B3112 /* Disk.h */,
@@ -191,12 +191,12 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* Disk Arbitrator.app */,
+				8D1107320486CEB800E47090 /* FAT16 Mount Blocker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* DiskArbitrator */ = {
+		29B97314FDCFA39411CA2CEA /* FAT16MountBlocker */ = {
 			isa = PBXGroup;
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -205,14 +205,14 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			name = DiskArbitrator;
+			name = FAT16MountBlocker;
 			sourceTree = "<group>";
 			usesTabs = 1;
 		};
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				256AC3F00F4B6AF500CF3369 /* DiskArbitrator_Prefix.pch */,
+				256AC3F00F4B6AF500CF3369 /* FAT16MountBlocker_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				9654A209110C8D4100E9B0C4 /* AppError.h */,
 				9654A20A110CB55B00E9B0C4 /* AppError.m */,
@@ -228,7 +228,7 @@
 			children = (
 				9654A1D8110C760300E9B0C4 /* Images */,
 				A532F1F31B93C4A0007DC4FD /* Nibs */,
-				8D1107310486CEB800E47090 /* DiskArbitrator-Info.plist */,
+				8D1107310486CEB800E47090 /* FAT16MountBlocker-Info.plist */,
 				9654B742111DE2EF00E9B0C4 /* README.markdown */,
 				A5E4FC5A1CC99C64005B7675 /* ReleaseNotes.markdown */,
 			);
@@ -275,9 +275,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* DiskArbitrator */ = {
+		8D1107260486CEB800E47090 /* FAT16MountBlocker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "DiskArbitrator" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "FAT16MountBlocker" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -288,10 +288,10 @@
 			);
 			dependencies = (
 			);
-			name = DiskArbitrator;
+			name = FAT16MountBlocker;
 			productInstallPath = "$(HOME)/Applications";
-			productName = DiskArbitrator;
-			productReference = 8D1107320486CEB800E47090 /* Disk Arbitrator.app */;
+			productName = FAT16MountBlocker;
+			productReference = 8D1107320486CEB800E47090 /* FAT16 Mount Blocker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -302,7 +302,7 @@
 			attributes = {
 				LastUpgradeCheck = 1130;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DiskArbitrator" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FAT16MountBlocker" */;
 			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
@@ -310,12 +310,12 @@
 				en,
 				Base,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* DiskArbitrator */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* FAT16MountBlocker */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* DiskArbitrator */,
-				9654B7A3111E46D600E9B0C4 /* Build Disk Arbitrator DMG */,
+				8D1107260486CEB800E47090 /* FAT16MountBlocker */,
+				9654B7A3111E46D600E9B0C4 /* Build FAT16 Mount Blocker DMG */,
 			);
 		};
 /* End PBXProject section */
@@ -359,7 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Source/build_dmg.sh\" \"Disk Arbitrator\"\n";
+			shellScript = "\"${SRCROOT}/Source/build_dmg.sh\" \"FAT16 Mount Blocker\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -369,13 +369,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				256AC3DA0F4B6AC300CF3369 /* DiskArbitratorAppController.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* FAT16MountBlockerAppController.m in Sources */,
 				964E4DCB10F9E874007B3112 /* Arbitrator.m in Sources */,
 				964E4DEE10F9F4BD007B3112 /* Disk.m in Sources */,
 				9654A174110B178D00E9B0C4 /* DiskCell.m in Sources */,
 				9654A20B110CB55B00E9B0C4 /* AppError.m in Sources */,
 				9654A46D11119FB600E9B0C4 /* DiskArbitrationPrivateFunctions.m in Sources */,
-				9626D293111F476000B803AB /* DiskArbitratorAppController+Toolbar.m in Sources */,
+				9626D293111F476000B803AB /* FAT16MountBlockerAppController+Toolbar.m in Sources */,
 				9626E46A112395DD00B803AB /* SheetController.m in Sources */,
 				9626E5091124C63100B803AB /* DiskInfoController.m in Sources */,
 				9626E83211314E7600B803AB /* AttachDiskImageController.m in Sources */,
@@ -387,7 +387,7 @@
 /* Begin PBXTargetDependency section */
 		9654B7A8111E470600E9B0C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8D1107260486CEB800E47090 /* DiskArbitrator */;
+			target = 8D1107260486CEB800E47090 /* FAT16MountBlocker */;
 			targetProxy = 9654B7A7111E470600E9B0C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -444,7 +444,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = "Disk Arbitrator.dmg";
+				PRODUCT_NAME = "FAT16 Mount Blocker.dmg";
 			};
 			name = Debug;
 		};
@@ -455,7 +455,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = "Disk Arbitrator.dmg";
+				PRODUCT_NAME = "FAT16 Mount Blocker.dmg";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -472,11 +472,13 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Source/DiskArbitrator_Prefix.pch;
-				INFOPLIST_FILE = "Resources/DiskArbitrator-Info.plist";
+				GCC_PREFIX_HEADER = Source/FAT16MountBlocker_Prefix.pch;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = "Resources/FAT16MountBlocker-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_BUNDLE_IDENTIFIER = "us.burghardt.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Disk Arbitrator";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.izmar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "FAT16 Mount Blocker";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -491,11 +493,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Source/DiskArbitrator_Prefix.pch;
-				INFOPLIST_FILE = "Resources/DiskArbitrator-Info.plist";
+				GCC_PREFIX_HEADER = Source/FAT16MountBlocker_Prefix.pch;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = "Resources/FAT16MountBlocker-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_BUNDLE_IDENTIFIER = "us.burghardt.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Disk Arbitrator";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.izmar.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "FAT16 Mount Blocker";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -578,7 +582,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9654B7A6111E46F600E9B0C4 /* Build configuration list for PBXAggregateTarget "Build Disk Arbitrator DMG" */ = {
+		9654B7A6111E46F600E9B0C4 /* Build configuration list for PBXAggregateTarget "Build FAT16 Mount Blocker DMG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9654B7A4111E46D800E9B0C4 /* Debug */,
@@ -587,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "DiskArbitrator" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "FAT16MountBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
@@ -596,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DiskArbitrator" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FAT16MountBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

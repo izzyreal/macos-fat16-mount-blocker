@@ -6,8 +6,8 @@
 //  Copyright 2010 Aaron Burghardt. All rights reserved.
 //
 
-#import "DiskArbitratorAppController.h"
-#import "DiskArbitratorAppController+Toolbar.h"
+#import "FAT16MountBlockerAppController.h"
+#import "FAT16MountBlockerAppController+Toolbar.h"
 #import "AppError.h"
 #import "Arbitrator.h"
 #import "Disk.h"
@@ -373,9 +373,9 @@
 	
 	self.hasUserLaunchAgent = [fm fileExistsAtPath:self.userLaunchAgentPath];
 	if (self.hasUserLaunchAgent)
-		self.installUserLaunchAgentMenuTitle = @"Uninstall User Launch Agent...";
+		self.installUserLaunchAgentMenuTitle = @"Disable auto-start";
 	else
-		self.installUserLaunchAgentMenuTitle = @"Install User Launch Agent...";
+		self.installUserLaunchAgentMenuTitle = @"Enable auto-start";
 }
 
 - (BOOL)canInstallLaunchAgent {
@@ -396,7 +396,7 @@
 		
 		if ([fm removeItemAtPath:dstPath error:&error] == YES) {
             alert = [[NSAlert alloc] init];
-            alert.messageText = @"Launch Agent removed. Changes will take effect on next login.";
+            alert.messageText = @"Launch Agent for auto-start removed. Changes will take effect on next login.";
 		}
 		else {
 			alert = [NSAlert alertWithError:error];

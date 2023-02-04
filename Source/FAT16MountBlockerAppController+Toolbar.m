@@ -6,7 +6,7 @@
 //  Copyright 2010 . All rights reserved.
 //
 
-#import "DiskArbitratorAppController+Toolbar.h"
+#import "FAT16MountBlockerAppController+Toolbar.h"
 #import "Disk.h"
 
 
