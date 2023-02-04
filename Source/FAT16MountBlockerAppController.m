@@ -73,7 +73,7 @@
 	
 	NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
 	[defaults setObject:[NSNumber numberWithInt:LOG_INFO] forKey:AppLogLevelDefaultsKey];
-	[defaults setObject:[NSNumber numberWithBool:YES]     forKey:@"ShowMainWindowAtStartup"];
+	[defaults setObject:[NSNumber numberWithBool:NO]     forKey:@"ShowMainWindowAtStartup"];
 	[defaults setObject:[NSNumber numberWithBool:NO]     forKey:@"ShowMainWindowAtActivate"];
 	[[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
 	
@@ -113,8 +113,8 @@
 
 - (void)applicationDidBecomeActive:(NSNotification *)notification
 {
-	if ([[NSUserDefaults standardUserDefaults] boolForKey:@"ShowMainWindowAtActivate"])
-		[window makeKeyAndOrderFront:self];
+//	if ([[NSUserDefaults standardUserDefaults] boolForKey:@"ShowMainWindowAtActivate"])
+//		[window makeKeyAndOrderFront:self];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -404,7 +404,7 @@
 	}
 	else {
 		NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-		[dict setObject:@"us.burghardt.Disk-Arbitrator" forKey:@"Label"];
+		[dict setObject:@"nl.izmar.FAT16-Mount-Blocker" forKey:@"Label"];
 		[dict setObject:[NSArray arrayWithObject:[[NSBundle mainBundle] executablePath]] forKey:@"ProgramArguments"];
 		[dict setObject:[NSNumber numberWithBool:NO] forKey:@"Disabled"];
 		[dict setObject:[NSNumber numberWithBool:YES] forKey:@"EnableTransactions"];

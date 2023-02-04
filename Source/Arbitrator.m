@@ -170,30 +170,30 @@
 
 - (DADissenterRef)approveMount:(Disk *)disk __attribute__((cf_returns_retained))
 {
-	if (self.isActivated) {
-		// Block mode prevents everything from mounting, unless this disk is being mounted from our GUI
-		if (self.mountMode == MM_BLOCK && !disk.isMounting) {
-			return [self defaultDissenter];
-		}
+	NSDictionary* properties = [disk diskDescription];
 
-		// When an approve mount callback is received, we have no idea if this approval was from
-		// a mount that belongs to us, or someone else. So we track whether we have rejected a
-		// mount request, and only allow mounts after we have rejected the initial request.
-		if (!disk.rejectedMount) {
-			disk.rejectedMount = YES;
-			// Do the mount after a slight delay to allow time for this approval to finish
-			[self performSelector:@selector(mountApprovedDisk:) withObject:disk afterDelay:0.1];
-			return [self defaultDissenter];
-		} else {
-			// Allow the mount since we previously rejected it
-			NSAssert(disk.isMounting == YES, @"invalid state");
-			disk.isMounting = NO;
-			disk.rejectedMount = NO;
-			return NULL;
+	bool isEjectable = [disk isEjectable];
+	bool isMountable = [disk isMountable];
+	bool isLeaf = [disk isLeaf];
+
+	if (isLeaf && isEjectable && isMountable && !disk.isMounting)
+	{
+		NSString* volumeKind = [properties objectForKey:(NSString *)kDADiskDescriptionVolumeKindKey];
+		bool isMsDos = strcmp(volumeKind.UTF8String, "msdos") == 0;
+		
+		if (isMsDos) {
+			NSString* volumeType = [properties objectForKey:(NSString *)kDADiskDescriptionVolumeTypeKey];
+			bool isFat16 = strcmp(volumeType.UTF8String, "MS-DOS (FAT16)") == 0;
+			
+			if (isMsDos && isFat16) {
+				self.mountMode = MM_READONLY;
+				disk.rejectedMount = YES;
+				[self performSelector:@selector(mountApprovedDisk:) withObject:disk afterDelay:0.1];
+				return [self defaultDissenter];
+			}
 		}
 	}
-
-	// Not activated, all mounting of everything
+	
 	return NULL;
 }
 
