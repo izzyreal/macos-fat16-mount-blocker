@@ -4,6 +4,10 @@ Small background utility that prevents macOS from writing to FAT16 volumes while
 
 It is forked from https://github.com/aburgh/Disk-Arbitrator with some slight modifications to hide configuration options and enforce the default behaviour we need.
 
+## Download
+
+[Download here](https://github.com/izzyreal/macos-fat16-mount-blocker/releases/download/0.8/FAT16.Mount.Blocker-0.8.dmg).
+
 ### Background
 
 The Akai MPC2000XL integrated sequencer/sampler uses a [tweaked version of the FAT16 filesystem](https://vmpcdocs.izmar.nl/vmpc_specific_settings.html#background). The tweak consists of allowing file names of up to 16 characters, as opposed to 8 characters, which is standard for FAT16. This is why MPC2000XL sound names can be 16 characters long.
