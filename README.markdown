@@ -14,7 +14,7 @@ Simply start the utility to prevent macOS from corrupting your MPC2000XL media. 
 
 ### Background
 
-The Akai MPC2000XL integrated sequencer/sampler uses a [tweaked version of the FAT16 filesystem](https://vmpcdocs.izmar.nl/vmpc_specific_settings.html#background). The tweak consists of allowing file names of up to 16 characters, as opposed to 8 characters, which is standard for FAT16. This is why MPC2000XL sound names can be 16 characters long.
+The Akai MPC2000XL integrated sequencer/sampler uses a [tweaked version of the FAT16 filesystem](https://vmpcdocs.izmar.nl/vmpc_specific_settings.html##akai-s-mpc2000xl-fat16-filesystem). The tweak consists of allowing file names of up to 16 characters, as opposed to 8 characters, which is standard for FAT16. This is why MPC2000XL sound names can be 16 characters long.
 
 Now, what happens when you insert your MPC2000XL CF card or other media in a Mac, is that macOS will write new files to it: files for Spotlight and for `fseventsd`. Part of writing new files to a volume includes _rewriting_ what was already there in the file allocation table -- something that macOS does not know how to do in the Akai-tweaked way.
 
