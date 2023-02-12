@@ -4,9 +4,13 @@ Small background utility that prevents macOS from writing to FAT16 volumes while
 
 It is forked from https://github.com/aburgh/Disk-Arbitrator with some slight modifications to hide configuration options and enforce the default behaviour we need.
 
-## Download
+## Download and setup
 
 [Download here](https://github.com/izzyreal/macos-fat16-mount-blocker/releases/download/0.8/FAT16.Mount.Blocker-0.8.dmg).
+
+Simply start the utility to prevent macOS from corrupting your MPC2000XL media. Optionally enable auto-start:
+
+<img width="193" alt="image" src="https://user-images.githubusercontent.com/3707432/218299617-c5d9cc74-d00d-4d75-866b-33b68a2f6177.png">
 
 ### Background
 
