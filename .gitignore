@@ -1,3 +1,7 @@
+.idea/
+cmake-build-debug/
+cmake-build-release/
+build/
 *.pbxuser
 *.perspectivev3
 *.mode1v3

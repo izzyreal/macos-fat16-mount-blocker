@@ -6,6 +6,12 @@
 //  Copyright 2010 Aaron Burghardt. All rights reserved.
 //
 
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#define SafeCFRelease(v) if (v) { CFRelease(v); }
+
 #import <Cocoa/Cocoa.h>
 #import <DiskArbitration/DiskArbitration.h>
 

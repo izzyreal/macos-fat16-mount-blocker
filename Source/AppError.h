@@ -28,6 +28,8 @@
 
 */
 
+#import <Foundation/Foundation.h>
+
 #include <syslog.h>
 
 void Log(NSInteger level, NSString *format, ...);

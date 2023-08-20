@@ -10,6 +10,7 @@
 #import "AppError.h"
 #import "Disk.h"
 #import "DiskArbitrationPrivateFunctions.h"
+#import <CoreFoundation/CoreFoundation.h>
 
 ////////////////////////////////////////////////////////////////////////////////
 
