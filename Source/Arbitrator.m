@@ -184,8 +184,9 @@
 		if (isMsDos) {
 			NSString* volumeType = [properties objectForKey:(NSString *)kDADiskDescriptionVolumeTypeKey];
 			bool isFat16 = strcmp(volumeType.UTF8String, "MS-DOS (FAT16)") == 0;
+			bool isFat12 = strcmp(volumeType.UTF8String, "MS-DOS (FAT12)") == 0;
 			
-			if (isMsDos && isFat16) {
+			if (isMsDos && (isFat16 || isFat12)) {
 				self.mountMode = MM_READONLY;
 				disk.rejectedMount = YES;
 				[self performSelector:@selector(mountApprovedDisk:) withObject:disk afterDelay:0.1];
